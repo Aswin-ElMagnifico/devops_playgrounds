@@ -6,7 +6,10 @@ def greeter_message():
 
 
 def print_envs():
-    print(os.environ.get("API_KEY"))
+    if os.environ.get("API_KEY") == "abcdefg":
+        print("abcdefg")
+    else:
+        print("encrypted")
 
 
 if __name__ == '__main__':
