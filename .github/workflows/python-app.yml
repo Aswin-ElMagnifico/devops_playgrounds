@@ -33,6 +33,7 @@ jobs:
         pytest
     
     - name: Running the application
+      working-directory: src/
       env:
         PYTHONPATH: ./src
         API_KEY: ${{ secrets.API_KEY }}
