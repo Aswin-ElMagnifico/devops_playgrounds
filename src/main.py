@@ -1,5 +1,3 @@
-
-
 def greeter_message():
     return "Hello world!"
 
