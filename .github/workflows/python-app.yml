@@ -30,4 +30,5 @@ jobs:
         export PYTHONPATH='./src'
     - name: Test with pytest
       run: |
+        echo $PYTHONPATH
         pytest
