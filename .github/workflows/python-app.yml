@@ -31,3 +31,9 @@ jobs:
         PYTHONPATH: ./src
       run: |
         pytest
+    
+    - name: Running the application
+      env:
+        API_KEY: ${{ secrets.API_KEY }}
+        run: |
+          python main.py
