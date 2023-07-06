@@ -35,6 +35,7 @@ jobs:
     - name: Running the application
       working-directory: src/
       env:
+        MY_ENV_VAR: ${{ env.SOME_ENV_VAR }}
         PYTHONPATH: ./src
         API_KEY: ${{ secrets.API_KEY }}
       run: |
