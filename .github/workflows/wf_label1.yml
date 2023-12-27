@@ -1,0 +1,13 @@
+name: Reusable workflow example
+
+on:
+  workflow_call:
+    
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    name: Workflow for Label 1
+    steps:
+    - run: echo "Hello label 1"
+    

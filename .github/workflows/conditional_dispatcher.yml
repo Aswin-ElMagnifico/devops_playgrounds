@@ -1,0 +1,15 @@
+name: My Action
+
+on:
+  pull_request:
+    
+
+jobs:
+  myjob:
+    runs-on: ubuntu-latest
+    name: Checking Labels
+    if: contains( github.event.pull_request.labels.*.name, 'Label1')
+    steps:
+      - call-workflow-label-1: ./.github/workflows/wf_label1.yml
+      - run: echo "called dispatch"
+      
